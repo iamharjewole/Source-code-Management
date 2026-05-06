@@ -96,10 +96,11 @@ Although the transition may require initial efforts and training, the long-term 
 - Develop: integration branch for testing.
 - Supporting branches; feature- new feature
 
-## **Branching Strategy Implementation**
+## **Process**
 
-- **Creating a branch from develop**
+- **Create a feature branch**
 
+create another branch different from the main branch to work on;
 git checkout develop
 
 git pull origin develop
@@ -114,6 +115,56 @@ git add .
 
 git commit -m “add new branch feature”
 
+![branch-commit](branch-commit.png)
+
 - **Push branch**
 
-Git push origin feature/login-page
+Push your branch to the remote repository;
+git push origin feature
+
+![branch-push](branch-push.png)
+
+2. **Pull Request (code review)**; Use of platforms like GitHub, Gitlab, Bitbucket.
+
+Process;
+
+- **Open a pull request (PR)**  
+
+From; feature/login-page
+
+To; develop
+![pull-requst](pull-request.png)
+
+- **Require**;
+
+At least 1-2 reviewers
+
+Code review approval before merge
+![pull-requst](pull-request-2.png)
+![pull-request](pull-request-1.png)
+
+- **Review checklist**;
+
+Code quality
+
+Naming conventions
+
+Security issues  
+
+Performance considerations
+
+![pull-merge](Pull-merge.png)
+
+## **WORKFLOW SUMMARY**
+
+- Create feature branch from develop
+- Develop and push code
+- Open Pull Request
+- Run automated integration tests
+- Get code review approval
+- Merge into develop
+- After testing, promote to main
+
+*This workflow is specifically designed to make collaboration smooth and reliable for distributed teams(people working from different locations, time zones or schedules). It turns a scattered group of developers into a coordinated, efficient team working from anywhere without chaos*.
+
+## **Task 3: Automate Code Quality and Deployment
