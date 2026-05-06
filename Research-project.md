@@ -1,4 +1,4 @@
-# **SOURCE CODE MANAGEMENT RESEARCH PROJECT**
+# **SOURCE CODE MANAGEMENT RESEARCH PROJECTS**
 
 ## **How does Git enhance source code management practices in modern software development, and what are its key advantages and challenges compared to other version control systems?**
 
