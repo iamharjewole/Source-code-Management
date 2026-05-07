@@ -241,3 +241,110 @@ git push origin main
 - Automated testing reduces conflicts
 - Pull requests ensure code review
 - Consistent deployment avoids “ it works on my machine” issues.
+
+## **Task 4; Enforce Security Best Practices**
+
+### **Git Repository Security Best Practices**
+
+1. **Access Control Configuration (Authentication and Authorization)**;
+
+- Use Secure Authentication Methods
+- Use Role-based Access Control (RBAC)
+- Enforce Multi-factor Authentication (MFA)
+- Limit Access via Teams
+- Rotate and Audit Access
+
+## **Why This Matters**
+
+- Prevents unauthorised access
+- Limits damage if an account is compromised
+- Ensure only the right people can modify critical code.
+
+2. **Branch Protection Rules**
+
+- Protect the branch
+- Require Pull request (PRs)
+- Require Code Reviews
+- Enforce Status Checks
+- Restricts who can merge
+- Enable “require linear history”
+
+## **Why This Matter**
+
+- Prevents accidental or malicious code from entering production
+- Ensures every change is reviewed and tested
+- Maintain a clean, traceable commit history
+- Enforcing commit signing; this commit signing verifies that commits truly come from the claimed author.
+
+## **How These Practices Ensure Security & Integrity**
+
+- Defense against Unauthorized Access; ensures only verified users can access the repo.
+
+- Prevention of Unsafe Code Changes; Branch protection forces ( code review, automated testing, controlled merging)
+- Guaranteed Code Authenticity; commit signing ensure; every commit is verifiable and no fake identity contributions.
+- Full Traceability and Accountability; every change is reviewed, logged and attributed to verified users.
+- Reduced Risk of supply chain attacks; secret scanning + dependency alerts protect against.
+
+## **Task 5: Handle a Real-World Git Challenge**
+
+### **Resolving a Merge Conflict**
+
+- Pull the latest changes: start by pulling updates from the remote repository ( git pull origin main )
+![git-pull](git-pull.png)
+
+- Identify Conflicting Files; Run git status
+
+![git-status](git-status.png)
+
+- Open and Inspect conflicts; open the file, you will see conflict markers.
+- Manually Resolve the conflicts; edit the file to keep what's correct or choose only one version depending on logic
+- Mark as resolved; After editing run git add the file name
+
+![git-add](git-add.png)
+
+- Commit the merge ; git commit -m “resolved merge conflict”
+
+![git-commit](git-commit.png)
+
+- Push Changes; Run git push origin main
+
+## **Updated Git Workflow to Prevent Future Conflicts**
+
+1. Use Feature Branches Properly;
+
+- Create a new branch for every task: git checkout -b feature
+- Never work directly on main
+
+2. Pull Frequently (stay updated)
+Before starting work each day; git pull origin main or Rebase your branch; git fetch origin or git rebase origin/main
+3. Make Smaller, Frequent pull requests; small PRs daily or per feature, this reduces overlap and conflicts.
+4. Communicate Actively (very important); Announce what files/modules you're working on
+5. Use code Ownership ; assign ownership for critical files, this avoids multiple people editing the same files unnecessarily.
+6. Enable Pull Request Reviews; no direct merge to main and require at least 1-2 reviewers.
+7. Enable branch protection rules; on GitHub/GitLab:
+
+- Require PR reviews
+- Require passing CI tests
+- Prevent force pushes
+
+8. Use Continuous Integration (CI); automatically test code before merging and prevents broken pr conflicting logic
+9. Prefer Rebase over merge (optional but powerful); git rebase main
+10. Break Large Files into smaller Modules; Conflicts happen more when many people edit the same file.
+
+## **Conflict Resolving Flow**;
+
+- Git pull
+- Git status
+- Fix conflict manually
+- Git add
+- Git commit
+- Git push
+
+## **Conflict Prevention Strategy**
+
+- Work in branches
+- Pull Often
+- Small PRs
+- Communication clearly
+- Use reviews + CI
+- Protect the main branch.
