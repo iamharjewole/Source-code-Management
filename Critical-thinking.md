@@ -168,3 +168,76 @@ Performance considerations
 *This workflow is specifically designed to make collaboration smooth and reliable for distributed teams(people working from different locations, time zones or schedules). It turns a scattered group of developers into a coordinated, efficient team working from anywhere without chaos*.
 
 ## **Task 3: Automate Code Quality and Deployment
+
+1. **Overview; this CI/CD pipeline automates**;
+
+- Code integration from Git
+- Running tests automatically
+- Deploying validated code to production
+
+***It ensures***;
+
+- Faster development cycles
+- Fewer bugs in production
+- Consistent deployment process
+
+2. **Tools Used**
+
+- Version Control : Git
+- Repository Hosting; GitHub(or Gitlab/Bitbucket)
+- CI/CD Engine; GitHub Actions
+- Testing framework; depends on stack (e.g, jest, Pytest)
+- Deployment Target; cloud server(AWS, AZure, or VPS)
+
+3. **Pipeline Architecture**; developer-git-push-ci-pipeline-test-build
+Flows;
+
+- Developer pushes code to a branch
+- Pipeline is triggered automatically
+- Tests run
+- If test pass-build is created
+- Code is deployed to staging/production
+
+4. **CI/CD Pipeline Configuration**;
+
+Create a file; .github/workflow/ci-cd.yml
+![ci-cd](Ci-cd.png)
+![ci-cd-2](ci-cd-2.png)
+
+6. **How the Pipeline Works**;
+
+- Code Push; developer pushes code to GitHub
+- Trigger; pipeline runs automatically on ; push to main or develop,  pull request to main
+- Build Stage; installs dependencies and prepares environment
+- Test Stage; Runs automated tests and if tests fail- pipeline stops
+- Deploy stage; only run if; tests pass, code is in the main branch.
+
+7. **How to Trigger Tests; test run automatically when**;
+
+- You push code; git push origin develop
+- You create a pull request to main
+
+![ci-pull](ci-pull.png)
+
+
+8. **How to deploy New Code**
+
+Automatic deployment; deployment happens when;
+
+- Code is merged into main
+- All tests pass
+
+git checkout main
+
+git merge develop
+
+git push origin main
+
+![ci-build-test](Ci-build-test.png)
+
+## **How this supports team collaboration**
+
+- Multiple developers can work on features independently
+- Automated testing reduces conflicts
+- Pull requests ensure code review
+- Consistent deployment avoids “ it works on my machine” issues.
