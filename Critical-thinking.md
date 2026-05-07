@@ -331,7 +331,7 @@ Before starting work each day; git pull origin main or Rebase your branch; git f
 9. Prefer Rebase over merge (optional but powerful); git rebase main
 10. Break Large Files into smaller Modules; Conflicts happen more when many people edit the same file.
 
-## **Conflict Resolving Flow**;
+## **Conflict Resolving Flow**
 
 - Git pull
 - Git status
@@ -347,4 +347,4 @@ Before starting work each day; git pull origin main or Rebase your branch; git f
 - Small PRs
 - Communication clearly
 - Use reviews + CI
-- Protect the main branch.
+- Protect the main branch
