@@ -306,7 +306,9 @@ git push origin main
 
 ![git-commit](git-commit.png)
 
-- Push Changes; Run git push origin main
+- Push Changes; Run git push origin feature
+
+![git-push](git-push.png)
 
 ## **Updated Git Workflow to Prevent Future Conflicts**
 
