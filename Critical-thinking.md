@@ -299,14 +299,20 @@ git push origin main
 - Open and Inspect conflicts; open the file, you will see conflict markers.
 - Manually Resolve the conflicts; edit the file to keep what's correct or choose only one version depending on logic
 - Mark as resolved; After editing run git add the file name
-- Commit the merge ; git commit -m “resolved merge conflict in app.js”
+
+![git-add](git-add.png)
+
+- Commit the merge ; git commit -m “resolved merge conflict”
+
+![git-commit](git-commit.png)
+
 - Push Changes; Run git push origin main
 
 ## **Updated Git Workflow to Prevent Future Conflicts**
 
 1. Use Feature Branches Properly;
 
-- Create a new branch for every task: git checkout -b feature/login-page
+- Create a new branch for every task: git checkout -b feature
 - Never work directly on main
 
 2. Pull Frequently (stay updated)
