@@ -101,13 +101,17 @@ Although the transition may require initial efforts and training, the long-term 
 - **Create a feature branch**
 
 create another branch different from the main branch to work on;
+
+~~~markdown
+
 git checkout develop
 
 git pull origin develop
 
 git checkout -b feature
+~~~
 
-![new-branch](New-branch.png)
+![new branch]()
 
 - **Work and Commit**
 
