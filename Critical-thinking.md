@@ -108,7 +108,7 @@ git pull origin develop
 git checkout -b feature
 ~~~
 
-![alt text](Images/New-branch.png)
+![alt text](images-/New-branch.png)
 
 - **Work and Commit**
 
@@ -117,14 +117,14 @@ git add .
 git commit -m “add new branch feature”
 ~~~
 
-![alt text](Images/branch-commit.png)
+![alt text](images-/branch-commit.png)
 
 - **Push branch**
 
 Push your branch to the remote repository;
 git push origin feature
 
-![alt text](Images/branch-push.png)
+![alt text](images-/branch-push.png)
 
 2. **Pull Request (code review)**; Use of platforms like GitHub, Gitlab, Bitbucket.
 
@@ -135,15 +135,15 @@ Process;
 From; feature/login-page
 
 To; develop
-![alt text](Images/pull-request.png)
+![alt text](images-/pull-request.png)
 
 - **Require**;
 
 At least 1-2 reviewers
 
 Code review approval before merge
-![alt text](Images/pull-request-1.png)
-![alt text](Images/pull-request-2.png)
+![alt text](images-/pull-request-1.png)
+![alt text](images-/pull-request-2.png)
 
 - **Review checklist**;
 
@@ -155,7 +155,7 @@ Security issues
 
 Performance considerations
 
-![alt text](Images/Pull-merge.png)
+![alt text](images-/Pull-merge.png)
 
 ## **WORKFLOW SUMMARY**
 
@@ -208,8 +208,8 @@ Create a file;
 .github/workflow/ci-cd.yml
 ~~~
 
-![alt text](Images/Ci-cd.png)
-![alt text](Images/ci-cd-2.png)
+![alt text](images-/Ci-cd.png)
+![alt text](images-/ci-cd-2.png)
 
 6. **How the Pipeline Works**;
 
@@ -229,7 +229,7 @@ git push origin develop
 
 - You create a pull request to main
 
-![alt text](Images/ci-pull.png)
+![alt text](images-/ci-pull.png)
 
 8. **How to deploy New Code**
 
@@ -244,7 +244,7 @@ git merge develop
 git push origin main
 ~~~
 
-![alt text](Images/Ci-build-test.png)
+![alt text](images-/Ci-build-test.png)
 
 ## **How this supports team collaboration**
 
@@ -306,7 +306,7 @@ git push origin main
 git pull origin main 
 ~~~
 
-![alt text](Images/git-pull.png)
+![alt text](images-/git-pull.png)
 
 - Identify Conflicting Files;
 
@@ -314,7 +314,7 @@ git pull origin main
 Run git status
 ~~~
 
-![alt text](Images/git-status.png)
+![alt text](images-/git-status.png)
 
 - Open and Inspect conflicts; open the file, you will see conflict markers.
 - Manually Resolve the conflicts; edit the file to keep what's correct or choose only one version depending on logic
@@ -324,7 +324,7 @@ Run git status
 git add the file name
 ~~~
 
-![alt text](Images/git-add.png)
+![alt text](images-/git-add.png)
 
 - Commit the merge ;
 
@@ -332,7 +332,7 @@ git add the file name
 git commit -m “resolved merge conflict”
 ~~~
 
-![alt text](Images/git-commit.png)
+![alt text](images-/git-commit.png)
 
 - Push Changes; Run
 
@@ -340,7 +340,7 @@ git commit -m “resolved merge conflict”
 git push origin feature
 ~~~
 
-![alt text](Images/git-push.png)
+![alt text](images-/git-push.png)
 
 ## **Updated Git Workflow to Prevent Future Conflicts**
 
