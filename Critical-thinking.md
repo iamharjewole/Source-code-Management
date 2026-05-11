@@ -108,7 +108,7 @@ git pull origin develop
 git checkout -b feature
 ~~~
 
-![alt text](images-/New-branch.png)
+![alt text](New-branch.png)
 
 - **Work and Commit**
 
@@ -117,7 +117,7 @@ git add .
 git commit -m “add new branch feature”
 ~~~
 
-![alt text](images-/branch-commit.png)
+![alt text](branch-commit.png)
 
 - **Push branch**
 
