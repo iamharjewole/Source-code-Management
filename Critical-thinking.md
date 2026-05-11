@@ -103,30 +103,28 @@ Although the transition may require initial efforts and training, the long-term 
 create another branch different from the main branch to work on;
 
 ~~~markdown
-
 git checkout develop
-
 git pull origin develop
-
 git checkout -b feature
 ~~~
 
-![new branch]()
+![alt text](Images/New-branch.png)
 
 - **Work and Commit**
 
+~~~markdown
 git add .
-
 git commit -m “add new branch feature”
+~~~
 
-![branch-commit](branch-commit.png)
+![alt text](Images/branch-commit.png)
 
 - **Push branch**
 
 Push your branch to the remote repository;
 git push origin feature
 
-![branch-push](branch-push.png)
+![alt text](Images/branch-push.png)
 
 2. **Pull Request (code review)**; Use of platforms like GitHub, Gitlab, Bitbucket.
 
@@ -137,15 +135,15 @@ Process;
 From; feature/login-page
 
 To; develop
-![pull-requst](pull-request.png)
+![alt text](Images/pull-request.png)
 
 - **Require**;
 
 At least 1-2 reviewers
 
 Code review approval before merge
-![pull-requst](pull-request-2.png)
-![pull-request](pull-request-1.png)
+![alt text](Images/pull-request-1.png)
+![alt text](Images/pull-request-2.png)
 
 - **Review checklist**;
 
@@ -157,7 +155,7 @@ Security issues
 
 Performance considerations
 
-![pull-merge](Pull-merge.png)
+![alt text](Images/Pull-merge.png)
 
 ## **WORKFLOW SUMMARY**
 
@@ -204,9 +202,14 @@ Flows;
 
 4. **CI/CD Pipeline Configuration**;
 
-Create a file; .github/workflow/ci-cd.yml
-![ci-cd](Ci-cd.png)
-![ci-cd-2](ci-cd-2.png)
+Create a file;
+
+~~~markdown
+.github/workflow/ci-cd.yml
+~~~
+
+![alt text](Images/Ci-cd.png)
+![alt text](Images/ci-cd-2.png)
 
 6. **How the Pipeline Works**;
 
@@ -218,11 +221,15 @@ Create a file; .github/workflow/ci-cd.yml
 
 7. **How to Trigger Tests; test run automatically when**;
 
-- You push code; git push origin develop
+- You push code;
+
+~~~markdown
+git push origin develop
+~~~
+
 - You create a pull request to main
 
-![ci-pull](ci-pull.png)
-
+![alt text](Images/ci-pull.png)
 
 8. **How to deploy New Code**
 
@@ -231,13 +238,13 @@ Automatic deployment; deployment happens when;
 - Code is merged into main
 - All tests pass
 
+~~~markdown
 git checkout main
-
 git merge develop
-
 git push origin main
+~~~
 
-![ci-build-test](Ci-build-test.png)
+![alt text](Images/Ci-build-test.png)
 
 ## **How this supports team collaboration**
 
@@ -293,36 +300,74 @@ git push origin main
 
 ### **Resolving a Merge Conflict**
 
-- Pull the latest changes: start by pulling updates from the remote repository ( git pull origin main )
-![git-pull](git-pull.png)
+- Pull the latest changes: start by pulling updates from the remote repository
 
-- Identify Conflicting Files; Run git status
+~~~markdown
+git pull origin main 
+~~~
 
-![git-status](git-status.png)
+![alt text](Images/git-pull.png)
+
+- Identify Conflicting Files;
+
+~~~markdown
+Run git status
+~~~
+
+![alt text](Images/git-status.png)
 
 - Open and Inspect conflicts; open the file, you will see conflict markers.
 - Manually Resolve the conflicts; edit the file to keep what's correct or choose only one version depending on logic
-- Mark as resolved; After editing run git add the file name
+- Mark as resolved; After editing run
 
-![git-add](git-add.png)
+~~~markdown
+git add the file name
+~~~
 
-- Commit the merge ; git commit -m “resolved merge conflict”
+![alt text](Images/git-add.png)
 
-![git-commit](git-commit.png)
+- Commit the merge ;
 
-- Push Changes; Run git push origin feature
+~~~markdown
+git commit -m “resolved merge conflict”
+~~~
 
-![git-push](git-push.png)
+![alt text](Images/git-commit.png)
+
+- Push Changes; Run
+
+~~~markdown
+git push origin feature
+~~~
+
+![alt text](Images/git-push.png)
 
 ## **Updated Git Workflow to Prevent Future Conflicts**
 
 1. Use Feature Branches Properly;
 
-- Create a new branch for every task: git checkout -b feature
+- Create a new branch for every task:
+
+~~~markdown
+git checkout -b feature
+ ~~~
+
 - Never work directly on main
 
 2. Pull Frequently (stay updated)
-Before starting work each day; git pull origin main or Rebase your branch; git fetch origin or git rebase origin/main
+Before starting work each day;
+
+~~~markdown
+git pull origin main
+~~~~
+
+Or Rebase your branch;
+
+~~~markdown
+git fetch origin or 
+git rebase origin/main
+~~~
+
 3. Make Smaller, Frequent pull requests; small PRs daily or per feature, this reduces overlap and conflicts.
 4. Communicate Actively (very important); Announce what files/modules you're working on
 5. Use code Ownership ; assign ownership for critical files, this avoids multiple people editing the same files unnecessarily.
