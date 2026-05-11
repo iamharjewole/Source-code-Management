@@ -108,7 +108,8 @@ git pull origin develop
 git checkout -b feature
 ~~~
 
-![alt text](New-branch.png)
+<img width="959" height="661" alt="New-branch" src="https://github.com/user-attachments/assets/607968d3-b8aa-45ad-af31-5fab168cc57f" />
+
 
 - **Work and Commit**
 
@@ -117,14 +118,16 @@ git add .
 git commit -m “add new branch feature”
 ~~~
 
-![alt text](branch-commit.png)
+<img width="960" height="659" alt="branch-commit" src="https://github.com/user-attachments/assets/ba6f0d0d-be9b-4250-8b00-b046c3022ecc" />
+
 
 - **Push branch**
 
 Push your branch to the remote repository;
 git push origin feature
 
-![alt text](images/branch-push.png)
+<img width="962" height="662" alt="branch-push" src="https://github.com/user-attachments/assets/fa469f81-b0d4-470a-abe4-4965e2ca1346" />
+
 
 2. **Pull Request (code review)**; Use of platforms like GitHub, Gitlab, Bitbucket.
 
@@ -135,15 +138,18 @@ Process;
 From; feature/login-page
 
 To; develop
-![alt text](pull-request.png)
+<img width="1124" height="722" alt="pull-request" src="https://github.com/user-attachments/assets/dd80a301-374c-4041-84c4-7252372a240f" />
+
 
 - **Require**;
 
 At least 1-2 reviewers
 
 Code review approval before merge
-![alt text](pull-request-1.png)
-![alt text](pull-request-2.png)
+<img width="1109" height="711" alt="pull-request-1" src="https://github.com/user-attachments/assets/87bf2ccd-ea4c-4898-becc-b4faee150b50" />
+
+<img width="1127" height="715" alt="pull-request-2" src="https://github.com/user-attachments/assets/231b2c0b-3aeb-40b8-8421-818189e5e0d7" />
+
 
 - **Review checklist**;
 
@@ -155,7 +161,8 @@ Security issues
 
 Performance considerations
 
-![alt text](Pull-merge.png)
+<img width="1127" height="711" alt="Pull-merge" src="https://github.com/user-attachments/assets/037a4cec-a231-4083-bcd9-d860aa8d13b3" />
+
 
 ## **WORKFLOW SUMMARY**
 
@@ -208,8 +215,10 @@ Create a file;
 .github/workflow/ci-cd.yml
 ~~~
 
-![alt text](Ci-cd.png)
-![alt text](ci-cd-2.png)
+<img width="1123" height="710" alt="Ci-cd" src="https://github.com/user-attachments/assets/960e38fa-67fc-4dd4-a908-46fec7677523" />
+
+<img width="1124" height="713" alt="ci-cd-2" src="https://github.com/user-attachments/assets/15ad8df4-773c-4993-ac7b-97772f1c7e00" />
+
 
 6. **How the Pipeline Works**;
 
@@ -229,7 +238,7 @@ git push origin develop
 
 - You create a pull request to main
 
-![alt text](ci-pull.png)
+<img width="1120" height="683" alt="ci-pull" src="https://github.com/user-attachments/assets/7cc67ad5-72e8-4220-913c-3d29aa5ea52c" />
 
 8. **How to deploy New Code**
 
@@ -244,7 +253,8 @@ git merge develop
 git push origin main
 ~~~
 
-![alt text](Ci-build-test.png)
+<img width="1121" height="713" alt="Ci-build-test" src="https://github.com/user-attachments/assets/663ab363-0a65-49e6-a4da-c1cea690e25d" />
+
 
 ## **How this supports team collaboration**
 
@@ -306,7 +316,8 @@ git push origin main
 git pull origin main 
 ~~~
 
-![alt text](git-pull.png)
+<img width="1044" height="660" alt="git-pull" src="https://github.com/user-attachments/assets/51b9b559-56e0-432b-b2f8-519583a8dca9" />
+
 
 - Identify Conflicting Files;
 
@@ -314,7 +325,8 @@ git pull origin main
 Run git status
 ~~~
 
-![alt text](git-status.png)
+<img width="1045" height="661" alt="git-status" src="https://github.com/user-attachments/assets/954cde8c-9ea7-4a34-9693-dc258912bbce" />
+
 
 - Open and Inspect conflicts; open the file, you will see conflict markers.
 - Manually Resolve the conflicts; edit the file to keep what's correct or choose only one version depending on logic
@@ -324,7 +336,8 @@ Run git status
 git add the file name
 ~~~
 
-![alt text](git-add.png)
+<img width="1043" height="658" alt="git-add" src="https://github.com/user-attachments/assets/a57fd76c-c4ce-47cd-b3cd-86a2c7be8d19" />
+
 
 - Commit the merge ;
 
@@ -332,7 +345,8 @@ git add the file name
 git commit -m “resolved merge conflict”
 ~~~
 
-![alt text](git-commit.png)
+<img width="1046" height="664" alt="git-commit" src="https://github.com/user-attachments/assets/d4cbf655-d428-41a5-8e34-5ef24b2eda1c" />
+
 
 - Push Changes; Run
 
@@ -340,7 +354,8 @@ git commit -m “resolved merge conflict”
 git push origin feature
 ~~~
 
-![alt text](git-push.png)
+<img width="1043" height="664" alt="git-push" src="https://github.com/user-attachments/assets/0187ebf5-d37d-446a-b587-0a4e3c9d259e" />
+
 
 ## **Updated Git Workflow to Prevent Future Conflicts**
 
