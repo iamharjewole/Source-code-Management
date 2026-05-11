@@ -124,7 +124,7 @@ git commit -m “add new branch feature”
 Push your branch to the remote repository;
 git push origin feature
 
-![alt text](images-/branch-push.png)
+![alt text](images/branch-push.png)
 
 2. **Pull Request (code review)**; Use of platforms like GitHub, Gitlab, Bitbucket.
 
@@ -135,15 +135,15 @@ Process;
 From; feature/login-page
 
 To; develop
-![alt text](images-/pull-request.png)
+![alt text](pull-request.png)
 
 - **Require**;
 
 At least 1-2 reviewers
 
 Code review approval before merge
-![alt text](images-/pull-request-1.png)
-![alt text](images-/pull-request-2.png)
+![alt text](pull-request-1.png)
+![alt text](pull-request-2.png)
 
 - **Review checklist**;
 
@@ -155,7 +155,7 @@ Security issues
 
 Performance considerations
 
-![alt text](images-/Pull-merge.png)
+![alt text](Pull-merge.png)
 
 ## **WORKFLOW SUMMARY**
 
@@ -208,8 +208,8 @@ Create a file;
 .github/workflow/ci-cd.yml
 ~~~
 
-![alt text](images-/Ci-cd.png)
-![alt text](images-/ci-cd-2.png)
+![alt text](Ci-cd.png)
+![alt text](ci-cd-2.png)
 
 6. **How the Pipeline Works**;
 
@@ -229,7 +229,7 @@ git push origin develop
 
 - You create a pull request to main
 
-![alt text](images-/ci-pull.png)
+![alt text](ci-pull.png)
 
 8. **How to deploy New Code**
 
@@ -244,7 +244,7 @@ git merge develop
 git push origin main
 ~~~
 
-![alt text](images-/Ci-build-test.png)
+![alt text](Ci-build-test.png)
 
 ## **How this supports team collaboration**
 
@@ -306,7 +306,7 @@ git push origin main
 git pull origin main 
 ~~~
 
-![alt text](images-/git-pull.png)
+![alt text](git-pull.png)
 
 - Identify Conflicting Files;
 
@@ -314,7 +314,7 @@ git pull origin main
 Run git status
 ~~~
 
-![alt text](images-/git-status.png)
+![alt text](git-status.png)
 
 - Open and Inspect conflicts; open the file, you will see conflict markers.
 - Manually Resolve the conflicts; edit the file to keep what's correct or choose only one version depending on logic
@@ -324,7 +324,7 @@ Run git status
 git add the file name
 ~~~
 
-![alt text](images-/git-add.png)
+![alt text](git-add.png)
 
 - Commit the merge ;
 
@@ -332,7 +332,7 @@ git add the file name
 git commit -m “resolved merge conflict”
 ~~~
 
-![alt text](images-/git-commit.png)
+![alt text](git-commit.png)
 
 - Push Changes; Run
 
@@ -340,7 +340,7 @@ git commit -m “resolved merge conflict”
 git push origin feature
 ~~~
 
-![alt text](images-/git-push.png)
+![alt text](git-push.png)
 
 ## **Updated Git Workflow to Prevent Future Conflicts**
 
