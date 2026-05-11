@@ -117,7 +117,7 @@ git add .
 git commit -m “add new branch feature”
 ~~~
 
-![alt text](images-/branch-commit.png)
+<img width="960" height="659" alt="branch-commit" src="https://github.com/user-attachments/assets/d3bec416-8ffd-4114-ab7a-d3b8fc5c54d3" />
 
 - **Push branch**
 
